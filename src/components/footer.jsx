@@ -1,7 +1,7 @@
 import React from 'react';
 import Counter from './counter';
 import Link from 'next/link'
-import { Card, Box, Typography, Button } from '@mui/material';
+import {Card, Box, Typography} from '@mui/material';
 
 import Image from 'next/image'
 
@@ -124,11 +124,11 @@ export default function Footer(props) {
                     flexDirection: 'row',
                     alignItems: 'center'
                 }}>
-              <Link href="/" sx={{
+              <a href="/" sx={{
                 "&:hover": {
                   cursor: 'pointer !important',
                   textDecoration: 'underline',
-              },
+                },
               }}>
                 <Image
                   src={logoFacebook}
@@ -136,13 +136,13 @@ export default function Footer(props) {
                   width={50}
                   height={50}
                 />
-              </Link>
+              </a>
 
-              <Link href="/" sx={{
+              <a href="www.google.com.br" sx={{
                 "&:hover": {
                   cursor: 'pointer !important',
                   textDecoration: 'underline',
-              },
+                },
               }}>
                 <Image
                   src={logoInstagram}
@@ -150,7 +150,7 @@ export default function Footer(props) {
                   width={50}
                   height={50}
                 />
-              </Link>
+              </a>
             </Box>
           </Box>
 
