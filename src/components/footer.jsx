@@ -138,7 +138,7 @@ export default function Footer(props) {
                 />
               </a>
 
-              <a href="www.google.com.br" sx={{
+              <a href="/" sx={{
                 "&:hover": {
                   cursor: 'pointer !important',
                   textDecoration: 'underline',
