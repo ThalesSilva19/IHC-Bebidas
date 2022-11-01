@@ -1,5 +1,6 @@
 import React from 'react';
 import Counter from './counter';
+import Link from 'next/link'
 import { Card, Box, Typography, Button } from '@mui/material';
 
 import Image from 'next/image'
@@ -17,8 +18,7 @@ export default function Footer(props) {
         <Card variant='outlined' sx={{
             display: 'flex',
             flexDirection: 'row',
-            paddingTop: '48px',
-            justifyContent: 'space-around',
+                 justifyContent: 'space-around',
             Width: '100%',
             height: 'auto',
             backgroundColor: '#CBCBCB',
@@ -32,11 +32,47 @@ export default function Footer(props) {
                 alignItems: 'center'
             }}
           >
-            <Typography variant='subtitle1'><b>Ajuda e Suporte</b></Typography>
-            <Typography variant='p'>FAQ</Typography>
-            <Typography variant='p'>Prazo de Entrega</Typography>
-            <Typography variant='p'>Taxas de Entrega</Typography>
-            <Typography variant='p'>Formas de Pagamento</Typography>
+            <Typography variant='subtitle1'><b>Ajuda e Suporte</b></Typography> 
+            <Link href="/">
+              <Typography variant='p' sx={{
+                                
+                "&:hover": {
+                    cursor: 'pointer !important',
+                    textDecoration: 'underline',
+                },
+              }}>FAQ</Typography>
+            </Link>
+
+            <Link href="/">
+              <Typography variant='p' sx={{
+                                
+                "&:hover": {
+                    cursor: 'pointer !important',
+                    textDecoration: 'underline',
+                },
+              }}>Prazo de Entrega</Typography>
+            </Link>
+
+            <Link href="/">
+              <Typography variant='p' sx={{
+                padding: '4px 8px 4px 8px',                
+                "&:hover": {
+                    cursor: 'pointer !important',
+                    textDecoration: 'underline',
+                },
+              }}>Taxas de Entrega</Typography>
+            </Link>
+
+            <Link href="/">
+              <Typography variant='p' sx={{
+                                
+                "&:hover": {
+                    cursor: 'pointer !important',
+                    textDecoration: 'underline',
+                },
+              }}>Formas de Pagamento</Typography>
+            </Link>
+
           </Box>
           <Box
             sx={{
@@ -88,19 +124,33 @@ export default function Footer(props) {
                     flexDirection: 'row',
                     alignItems: 'center'
                 }}>
-              <Image
-                src={logoFacebook}
-                alt='Ícone do Facebook'
-                width={50}
-                height={50}
-              />
+              <Link href="/" sx={{
+                "&:hover": {
+                  cursor: 'pointer !important',
+                  textDecoration: 'underline',
+              },
+              }}>
+                <Image
+                  src={logoFacebook}
+                  alt='Ícone do Facebook'
+                  width={50}
+                  height={50}
+                />
+              </Link>
 
-              <Image
-                src={logoInstagram}
-                alt='Ícone do Instagram'
-                width={50}
-                height={50}
-              />
+              <Link href="/" sx={{
+                "&:hover": {
+                  cursor: 'pointer !important',
+                  textDecoration: 'underline',
+              },
+              }}>
+                <Image
+                  src={logoInstagram}
+                  alt='Ícone do Facebook'
+                  width={50}
+                  height={50}
+                />
+              </Link>
             </Box>
           </Box>
 
