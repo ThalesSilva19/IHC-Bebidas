@@ -11,21 +11,21 @@ import logoFacebook from '../public/images/facebook.png'
 import logoInstagram from '../public/images/instagram.png'
 import { fontWeight } from '@mui/system';
 
-export default function ProductCard(props) {
+export default function Footer(props) {
 
     return (
         <Card variant='outlined' sx={{
             display: 'flex',
             flexDirection: 'row',
-            alignItems: 'center',
+            paddingTop: '48px',
             justifyContent: 'space-around',
             Width: '100%',
-            height: '310px',
+            height: 'auto',
             backgroundColor: '#CBCBCB',
         }}>
           <Box
             sx={{
-                width: '275px',
+                width: 'auto',
                 height: '190px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -40,7 +40,7 @@ export default function ProductCard(props) {
           </Box>
           <Box
             sx={{
-                width: '300px',
+                width: 'auto',
                 height: '190px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -59,7 +59,7 @@ export default function ProductCard(props) {
 
           <Box
           sx={{
-              width: '495px',
+              width: 'auto',
               height: '130px',
               display: 'flex',
               flexDirection: 'column',
@@ -68,14 +68,14 @@ export default function ProductCard(props) {
             <Typography variant='subtitle1'><b>Formas de Pagamento</b></Typography>
             <Image
             src={formasPagamento}
-            alt='Ícone de celular'
-            width={290}
+            alt='Formas de Pagamento'
+            width={280}
             />
           </Box>
 
           <Box
             sx={{
-                  width: '495px',
+                  width: 'auto',
                   height: '130px',
                   display: 'flex',
                   flexDirection: 'column',
@@ -108,8 +108,8 @@ export default function ProductCard(props) {
             <Image
                   src={logo}
                   alt='Logotipo da Empresa'
-                  width={150}
-                  height={150}
+                  width={125}
+                  height={125}
             />
           </Box>
     

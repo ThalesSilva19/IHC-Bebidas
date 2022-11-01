@@ -1,12 +1,12 @@
 import React from 'react'
 import ProductCard from '../components/product_card'
-import FooterCard from '../components/footer'
+import Footer from '../components/footer'
 
 export default function index() {
   return (
     <main>
       <ProductCard/>
-      <FooterCard/>
+      <Footer/>
     </main>
   )
 }
