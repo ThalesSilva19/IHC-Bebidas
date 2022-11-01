@@ -17,7 +17,8 @@ export default function Footer(props) {
         <Card variant='outlined' sx={{
             display: 'flex',
             flexDirection: 'row',
-                 justifyContent: 'space-around',
+            alignItems: 'flex-end',
+            justifyContent: 'space-around',
             Width: '100%',
             height: 'auto',
             backgroundColor: '#CBCBCB',
