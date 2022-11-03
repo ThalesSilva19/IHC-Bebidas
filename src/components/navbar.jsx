@@ -11,11 +11,10 @@ export default function Navbar() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                width: '100%',
+                width: 'auto',
                 minHeight: '0px !important',
                 padding: '8px',
                 backgroundColor: '#FFB600',
-
             }}
         >
             <Link href="/">
