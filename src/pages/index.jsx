@@ -1,4 +1,6 @@
 import React from 'react'
+
+import NextJsCarousel from '../components/carousel'
 import ProductCard from '../components/product_card'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
@@ -9,7 +11,9 @@ export default function index() {
     <main>
       <Appbar/>
       <Navbar/>
-      <ProductCard/>
+      
+      <NextJsCarousel/>
+
       <Footer/>
     </main>
   )
