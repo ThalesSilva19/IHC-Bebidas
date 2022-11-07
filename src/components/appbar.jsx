@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link'
-import { Card, Box, TextField, Typography, Button } from '@mui/material';
+import { Card, Box, TextField, Button } from '@mui/material';
 
 import Image from 'next/image'
 
