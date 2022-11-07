@@ -12,8 +12,22 @@ export default function index() {
     <main>
       <Appbar/>
       <Navbar/>
+      <div style={{
+        margin: '50px',
+        fontSize: '20px'
+      }}>
+        <p>Home {'>'}</p>
+      </div>
       
       <NextJsCarousel/>
+
+      <div style={{
+        margin: '50px',
+        fontSize: '20px'
+      }}>
+        <p>Ofertas</p>
+      </div>
+
       <div style={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -25,6 +39,7 @@ export default function index() {
         <ProductCard/>
       </div>
 
+    
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -39,16 +54,23 @@ export default function index() {
           height: '65px',
           fontSize: '20px',
           border: '0',
-          borderRadius: '10px'
+          borderRadius: '10px',
+          margin: '10px'
         }}>
           Veja todas as Ofertas</button>
       </div>
 
       <div style={{
+        margin: '50px',
+        fontSize: '20px'
+      }}>
+        <p>Cervejas</p>
+      </div>
+      <div style={{
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
-        margin: '10px'
+        marginBottom: '100px'
       }}>
         <ProductCard/>
         <ProductCard/>
