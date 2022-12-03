@@ -11,31 +11,29 @@ export default class NextJsCarousel extends Component {
     render() {
         return (
             <Carousel>
-                <div>
-                    <Image
-                    src={banner1}
-                    alt='Logotipo da Empresa'
-                    // width={200}
-                    height={400}
-                    />
-                </div>
-                <div>
-                    <Image
-                    src={banner2}
-                    alt='Logotipo da Empresa'
-                    // width={200}
-                    height={400}
-                    />
-                </div>
-                
-                <div>
                 <Image
-                    src={banner3}
-                    alt='Logotipo da Empresa'
+                    tabIndex='0'
+                    src={banner1}
+                    alt='Coleção de garrafas de cerveja'
                     // width={200}
                     height={400}
-                    />
-                </div>
+                />
+                
+                <Image
+                    tabIndex='0'
+                    src={banner2}
+                    alt='Coleção de garrafas de cerveja'
+                    // width={200}
+                    height={400}
+                />
+            
+                <Image
+                    tabIndex='0'
+                    src={banner3}
+                    alt='Garrafa de cerveja ao fundo, com 2 canecas de vidro com cerveja'
+                    // width={200}
+                    height={400}
+                />
             </Carousel>
         );
     }

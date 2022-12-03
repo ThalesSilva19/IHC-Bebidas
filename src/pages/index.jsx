@@ -16,7 +16,7 @@ export default function index() {
         margin: '50px',
         fontSize: '20px'
       }}>
-        <p>Home {'>'}</p>
+        <h1>Home {'>'}</h1>
       </div>
       
       <NextJsCarousel/>
@@ -25,7 +25,7 @@ export default function index() {
         margin: '50px',
         fontSize: '20px'
       }}>
-        <p>Ofertas</p>
+        <h1>Ofertas</h1>
       </div>
 
       <div style={{
@@ -64,7 +64,7 @@ export default function index() {
         margin: '50px',
         fontSize: '20px'
       }}>
-        <p>Cervejas</p>
+        <h1>Cervejas</h1>
       </div>
       <div style={{
         display: 'flex',

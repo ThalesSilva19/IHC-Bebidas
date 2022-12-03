@@ -54,14 +54,14 @@ export default function Counter() {
                 display: 'flex'
             }}
         >
-            <LeftButton onClick={subCounter}>-</LeftButton>
+            <LeftButton aria-label='Subtrair' type="button" tabindex="0" onClick={subCounter}>-</LeftButton>
             <Typography sx={{
                 textAlign: 'center',
                 width: '25px',
                 height: '25px',
                 backgroundColor: '#CBCBCB'
             }}>{counter}</Typography>
-            <RightButton onClick={addCounter}>+</RightButton>
+            <RightButton aria-label='Incrementar' type="button" tabindex="0" onClick={addCounter}>+</RightButton>
         </Box>
     )
 }

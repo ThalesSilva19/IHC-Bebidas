@@ -66,7 +66,7 @@ export default function Footer(props) {
           }}>
           <Image
             src={lupaIcon}
-            alt='Logotipo da Empresa'
+            alt='Confirmar busca'
             width="41vh"
             height="41vh"
           />
@@ -79,7 +79,7 @@ export default function Footer(props) {
         }}>
           <Image
             src={usuarioIcon}
-            alt='Logotipo da Empresa'
+            alt='Perfil de usuário'
             width="40vh"
             height="40vh" />
         </Button>
@@ -87,7 +87,7 @@ export default function Footer(props) {
         <Button>
           <Image
             src={carrinhoIcon}
-            alt='Logotipo da Empresa'
+            alt='Carrinho de compras'
             width="40vh"
             height="40vh" />
         </Button>

@@ -29,15 +29,20 @@ export default function ProductCard(props) {
         }}
       >
         <Image
+          role="img"
+          tabindex="0"
+          id="Garrafa de cerveja"
           src={imagem}
-          alt='Imagem de Cerveja'
+          aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
+          alt='Garrafa de cerveja com rótulo escrito Quilmes'
           width={120}
           height={255}
         />
       </Box>
-      <Typography variant='h5'>Nome do Produto</Typography>
+      <Typography variant='h4' tabindex="0" >Nome do Produto</Typography>
       <Box
         sx={{
+          htmlFontSize: 10,
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
@@ -45,7 +50,7 @@ export default function ProductCard(props) {
           width: '60%'
         }}
       >
-        <Typography variant='subtitle1'>Preço</Typography>
+        <Typography variant='h5' tabindex="0">Preço: R$</Typography>
         <Counter/>
       </Box>
       <Button variant='contained'
@@ -54,7 +59,7 @@ export default function ProductCard(props) {
           color: '#000000'
         }}
       >
-        <Typography variant='h6'>Adicionar</Typography>
+        <Typography variant='h6'>Adicionar ao carrinho</Typography>
       </Button>
 
     </Card>

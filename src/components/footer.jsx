@@ -33,9 +33,9 @@ export default function Footer(props) {
           alignItems: 'center'
         }}
       >
-        <Typography variant='subtitle1'><b>Ajuda e Suporte</b></Typography>
+        <Typography variant='h6' tabindex="0"><b>Ajuda e Suporte</b></Typography>
         <Link href="/">
-          <Typography variant='p' sx={{
+          <Typography variant='subtitle1' tabindex="1" sx={{
 
             "&:hover": {
               cursor: 'pointer !important',
@@ -45,7 +45,7 @@ export default function Footer(props) {
         </Link>
 
         <Link href="/">
-          <Typography variant='p' sx={{
+          <Typography variant='subtitle1' tabindex="1" sx={{
 
             "&:hover": {
               cursor: 'pointer !important',
@@ -55,7 +55,7 @@ export default function Footer(props) {
         </Link>
 
         <Link href="/">
-          <Typography variant='p' sx={{
+          <Typography variant='subtitle1' tabindex="1" sx={{
             padding: '4px 8px 4px 8px',
             "&:hover": {
               cursor: 'pointer !important',
@@ -65,7 +65,7 @@ export default function Footer(props) {
         </Link>
 
         <Link href="/">
-          <Typography variant='p' sx={{
+          <Typography variant='subtitle1' tabindex="1" sx={{
 
             "&:hover": {
               cursor: 'pointer !important',
@@ -83,16 +83,16 @@ export default function Footer(props) {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-        }}>
-        <Typography variant='subtitle1'><b>Atendimento</b></Typography>
+        }}> 
+        <Typography variant='h6' tabindex="0"><b>Atendimento</b></Typography>
         <Image
           src={celularIcon}
           alt='Ícone de celular'
           width={55}
           height={75}
         />
-        <Typography variant='subtitle1'>sac@fontes.br</Typography>
-        <Typography variant='subtitle1'>(16)99571-2203</Typography>
+        <Typography variant='subtitle1' tabindex="1">sac@fontes.br</Typography>
+        <Typography variant='subtitle1' tabindex="1">(16)99571-2203</Typography>
       </Box>
 
       <Box
@@ -103,7 +103,7 @@ export default function Footer(props) {
           flexDirection: 'column',
           alignItems: 'center'
         }}>
-        <Typography variant='subtitle1'><b>Formas de Pagamento</b></Typography>
+        <Typography variant='h6' tabindex="0"><b>Formas de Pagamento</b></Typography>
         <Image
           src={formasPagamento}
           alt='Formas de Pagamento'
@@ -119,7 +119,7 @@ export default function Footer(props) {
           flexDirection: 'column',
           alignItems: 'center'
         }}>
-        <Typography variant='subtitle1'><b>Redes Sociais</b></Typography>
+        <Typography variant='h6' tabindex="0"><b>Redes Sociais</b></Typography>
         <Box
           sx={{
             display: 'flex',
@@ -133,6 +133,7 @@ export default function Footer(props) {
             },
           }}>
             <Image
+              tabindex="1"
               src={logoFacebook}
               alt='Ícone do Facebook'
               width={50}
@@ -147,8 +148,9 @@ export default function Footer(props) {
             },
           }}>
             <Image
+              tabindex="1"
               src={logoInstagram}
-              alt='Ícone do Facebook'
+              alt='Ícone do Instagram'
               width={50}
               height={50}
             />
