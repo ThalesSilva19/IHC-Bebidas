@@ -13,7 +13,7 @@ export default function Login() {
             justifyContent: 'center',
             gap: '32px'
         }}>
-            <Typography variant='h5'> Acesse sua conta </Typography>
+            <Typography variant='h4' tabIndex='0'> Acesse sua conta </Typography>
             <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '256px'}}></TextField>
             <TextField label='Senha' variant="outlined" size="small" sx={{ width: '256px'}}></TextField>
             <Button variant='contained'
@@ -24,7 +24,7 @@ export default function Login() {
                     height: '32px'
                 }}
             >
-                <Typography variant='h6'>Continuar</Typography>
+                <Typography variant='h5'>Continuar</Typography>
             </Button>
             <Button variant='contained'
                 sx={{
@@ -34,7 +34,7 @@ export default function Login() {
                     height: '32px'
                 }}
             >
-                <Typography variant='h6'>Criar Conta</Typography>
+                <Typography variant='h5'>Criar Conta</Typography>
             </Button>
 
         </Card>

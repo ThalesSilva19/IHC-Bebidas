@@ -25,7 +25,7 @@ export default function Register() {
             justifyContent: 'center',
             gap: '32px'
         }}>
-            <Typography variant='h5'> Crie sua conta </Typography>
+            <Typography variant='h4' tabIndex='0'> Crie sua conta </Typography>
             <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
             <Box sx={{
                 display: 'flex',
@@ -33,7 +33,7 @@ export default function Register() {
                 justifyContent: 'space-evenly'
             }}>
                 <Box>
-                    <FormLabel id="demo-radio-buttons-group-label">Gênero</FormLabel>
+                    <FormLabel id="demo-radio-buttons-group-label" tabIndex='0'>Gênero</FormLabel>
                     <RadioGroup
                         aria-labelledby="demo-radio-buttons-group-label"
                         defaultValue="female"
@@ -43,14 +43,14 @@ export default function Register() {
                             flexDirection: 'row'
                         }}
                     >
-                        <FormControlLabel value="female" control={<Radio />} label="Feminino" />
-                        <FormControlLabel value="male" control={<Radio />} label="Masculino" />
-                        <FormControlLabel value="other" control={<Radio />} label="Não Responder" />
+                        <FormControlLabel value="female" tabIndex='0' control={<Radio />} label="Feminino" />
+                        <FormControlLabel value="male" tabIndex='0' control={<Radio />} label="Masculino" />
+                        <FormControlLabel value="other" tabIndex='0' control={<Radio />} label="Não Responder" />
                     </RadioGroup>
                 </Box>
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
                     <DesktopDatePicker
-                        label="Date desktop"
+                        label="Calendário de datas"
                         inputFormat="MM/DD/YYYY"
                         value={value}
                         onChange={handleChange}
@@ -71,7 +71,7 @@ export default function Register() {
                     height: '32px'
                 }}
             >
-                <Typography variant='h6'>Continuar</Typography>
+                <Typography variant='h5'>Continuar</Typography>
             </Button>
             <Button variant='contained'
                 sx={{
@@ -81,7 +81,7 @@ export default function Register() {
                     height: '32px'
                 }}
             >
-                <Typography variant='h6'>Criar Conta</Typography>
+                <Typography variant='h5'>Criar Conta</Typography>
             </Button>
 
         </Card>

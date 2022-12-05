@@ -25,7 +25,7 @@ export default function Checkout() {
             justifyContent: 'center',
             gap: '32px'
         }}>
-            <Typography variant='h5'>PAGAMENTO</Typography>
+            <Typography variant='h4' aria-label='Pagamento' tabIndex='0'>PAGAMENTO</Typography>
             <Box sx={{
                 display: 'flex'
             }}>
@@ -34,15 +34,17 @@ export default function Checkout() {
                     padding: '32px'
                 }}>
                     <Box>
-                        <FormLabel id="demo-radio-buttons-group-label">Modo de pagamento</FormLabel>
+                        <FormLabel id="demo-radio-buttons-group-label" variant='h5' tabIndex='0'>Modo de pagamento</FormLabel>
                         <RadioGroup
                             aria-labelledby="demo-radio-buttons-group-label"
                             defaultValue="female"
                             name="radio-buttons-group"
                         >
-                            <FormControlLabel value="female" control={<Radio />} label="Feminino" />
-                            <FormControlLabel value="male" control={<Radio />} label="Masculino" />
-                            <FormControlLabel value="other" control={<Radio />} label="Não Responder" />
+                            <FormControlLabel tabIndex='0' value="PIX" aria-label='pix' control={<Radio />} label="PIX" />
+                            <FormControlLabel tabIndex='0' value="Boleto" control={<Radio />} label="Boleto" />
+                            <FormControlLabel tabIndex='0' value="Cartão de crédito" control={<Radio />} label="Cartão de crédito" />
+                            <FormControlLabel tabIndex='0' value="Cartão de débito" control={<Radio />} label="Cartão de débito" />
+                        
                         </RadioGroup>
                     </Box>
                 </Box>
@@ -52,11 +54,11 @@ export default function Checkout() {
                     padding: '32px',
                     gap: '8px'
                 }}>
-                    <TextField label='Número do Cartão' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
-                    <TextField label='Nome Impresso no Cartão' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
-                    <TextField label='Data de Vencimento' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
-                    <TextField label='CVV' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
-                    <TextField label='CPF do Titular' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
+                    <TextField tabIndex='0' aria-label='Número do cartão'        label='Número do Cartão' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
+                    <TextField tabIndex='0' aria-label='Nome impresso no cartão' label='Nome Impresso no Cartão' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
+                    <TextField tabIndex='0' aria-label='Data de vencimento'      label='Data de Vencimento' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
+                    <TextField tabIndex='0' aria-label='CVV'                     label='CVV' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
+                    <TextField tabIndex='0' aria-label='CPF do titular'          label='CPF do Titular' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
                 </Box>
             </Box>
             <Button variant='contained'

@@ -23,7 +23,7 @@ export default function Avaliacoes() {
                     color: '#000000'
                 }}
             >
-                <Typography variant='h6'>Ver mais avaliações</Typography>
+                <Typography variant='h5'>Ver mais avaliações</Typography>
             </Button>
         </Box>
     )

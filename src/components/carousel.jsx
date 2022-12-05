@@ -13,6 +13,9 @@ export default class NextJsCarousel extends Component {
     render() {
         return (
             <Box sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
                 width: '1082px',
                 height: '400px',
                 backgroundColor: '#FFF',

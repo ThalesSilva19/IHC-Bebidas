@@ -30,7 +30,7 @@ export default function ProductCard(props) {
       >
         <Image
           role="img"
-          tabindex="0"
+          tabIndex="0"
           id="Garrafa de cerveja"
           src={imagem}
           aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
@@ -39,7 +39,7 @@ export default function ProductCard(props) {
           height={255}
         />
       </Box>
-      <Typography variant='h4' tabindex="0" >Nome do Produto</Typography>
+      <Typography variant='h4' tabIndex="0" >Nome do Produto</Typography>
       <Box
         sx={{
           htmlFontSize: 10,
@@ -50,7 +50,7 @@ export default function ProductCard(props) {
           width: '60%'
         }}
       >
-        <Typography variant='h5' tabindex="0">Preço: R$</Typography>
+        <Typography variant='h5' tabIndex="0">Preço: R$</Typography>
         <Counter/>
       </Box>
       <Button variant='contained'

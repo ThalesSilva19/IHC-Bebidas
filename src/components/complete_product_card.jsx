@@ -22,7 +22,7 @@ export default function CompleteProductCard() {
         >
             <Image
                 role="img"
-                tabindex="0"
+                tabIndex="0"
                 id="Garrafa de cerveja"
                 src={imagem}
                 aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
@@ -35,8 +35,8 @@ export default function CompleteProductCard() {
                     maxWidth: '400px'
                 }}
             >
-                <Typography variant='h4' tabindex="0" >Cerveja 1234</Typography>
-                <Typography variant='h6' tabindex="0" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </Typography>
+                <Typography variant='h4' tabIndex="0" >Cerveja 1234</Typography>
+                <Typography variant='h6' tabIndex="0" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </Typography>
             </Box>
             <Box sx={{
                 display: 'flex',
@@ -44,13 +44,13 @@ export default function CompleteProductCard() {
                 justifyContent: 'center',
                 gap: '16px'
             }}>
-                <Typography variant='h4' tabindex="0" >4.9 * * * * *</Typography>
+                <Typography variant='h4' tabIndex="0" >4.9 * * * * *</Typography>
                 <Box sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between'
                 }}>
-                    <Typography variant='h6' tabindex="0" >R$ 9,90</Typography>
+                    <Typography variant='h6' tabIndex="0" >R$ 9,90</Typography>
                     <Counter />
                 </Box>
                 <Button variant='contained'
