@@ -18,9 +18,7 @@ export default class NextJsCarousel extends Component {
                 alignItems: 'center',
                 width: '80%',
                 height: '400px',
-                backgroundColor: '#FFF',
-                border: 'solid 1px gray',
-                borderRadius: '8px'
+                backgroundColor: '#FFF'
             }}>
                 <Carousel
                     autoPlay={true}
