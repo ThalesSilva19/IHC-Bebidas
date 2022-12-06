@@ -25,26 +25,28 @@ export default function Produto() {
       <Appbar />
       <Navbar />
       <Box sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                columnGap: '8px',
                 marginTop: '16px',
                 marginBottom: '16px',
-                marginLeft: '50px',
-                width: '100%'
-                }}>
-                <Link href='/'>
-                    <Typography variant='h6' sx={{
-                        "&:hover": {
-                            cursor: 'pointer !important'
-                        },
-                    }}>
-                        Home
-                    </Typography>
-                </Link>
-                <Typography variant='h6'>{'>'}</Typography>
-                <Typography variant='h6'>Cerveja 1234</Typography>
-            </Box>
+                marginLeft: '50px'
+            }}>
+        <Box sx={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  columnGap: '8px'
+                  }}>
+                  <Link href='/'>
+                      <Typography variant='h6' sx={{
+                          "&:hover": {
+                              cursor: 'pointer !important'
+                          },
+                      }}>
+                          Home
+                      </Typography>
+                  </Link>
+                  <Typography variant='h6'>{'>'}</Typography>
+                  <Typography variant='h6'>Cerveja 1234</Typography>
+              </Box>
+      </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
