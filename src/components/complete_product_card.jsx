@@ -18,7 +18,8 @@ export default function CompleteProductCard() {
                 backgroundColor: '#FFFFFF',
                 border: 'solid 1px gray',
                 borderRadius: '8px',
-                padding: '16px'
+                padding: '16px',
+                rowGap: '16px'
             }}
         >
             <Image
