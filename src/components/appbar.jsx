@@ -34,6 +34,7 @@ export default function Footer(props) {
           <Image
             src={logo}
             alt='Logotipo da Empresa'
+            title='Logotipo da Empresa'
             width={100}
             height={100}
           />
@@ -87,6 +88,7 @@ export default function Footer(props) {
             <Image
               src={usuarioIcon}
               alt='Perfil de usuário'
+              title='Perfil de usuário'
               width="40vh"
               height="40vh" />
           </Button>
@@ -96,6 +98,7 @@ export default function Footer(props) {
             <Image
               src={carrinhoIcon}
               alt='Carrinho de compras'
+              title='Carrinho de compras'
               width="40vh"
               height="40vh" />
           </Button>
