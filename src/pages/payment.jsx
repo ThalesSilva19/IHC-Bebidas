@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 import Appbar from '../components/appbar';
 import Navbar from '../components/navbar';
@@ -16,7 +16,7 @@ export default function Payment() {
                 marginLeft: '50px',
                 fontSize: '20px'
             }}>
-                <h4>Home {'>'} Meu Carrinho {'>'} Pagamento</h4>
+                <Typography variant='h6'>Home {'>'} Meu Carrinho {'>'} Pagamento</Typography>
             </Box>
             <Box sx={{
                 width: '100%',

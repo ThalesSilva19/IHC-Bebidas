@@ -1,40 +1,53 @@
 import React from 'react'
-
+import Link from 'next/link'
 import NextJsCarousel from '../components/carousel'
 import ProductCard from '../components/product_card'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
-import { Box, Button } from '@mui/material'
+import { Box, Button, Typography } from '@mui/material'
 
 export default function index() {
   return (
-    <main>
+    <Box>
       <Appbar />
       <Navbar />
       <Box sx={{
-        margin: '50px',
-        fontSize: '20px'
+        margin: '50px'
       }}>
-        <h4>Home {'>'}</h4>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          columnGap: '8px',
+          width: '100%'
+        }}>
+          <Link href='/'>
+            <Typography variant='h6' sx={{
+              "&:hover": {
+                cursor: 'pointer !important'
+              },
+            }}>
+              Home
+            </Typography>
+          </Link>
+        </Box>
       </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '100vw'
+        width: '98%'
       }}>
         <NextJsCarousel />
 
-        <div style={{
-          margin: '50px',
-          fontSize: '20px'
+        <Box sx={{
+          margin: '50px'
         }}>
-          <h1>Ofertas</h1>
-        </div>
+          <Typography variant='h4'>Ofertas</Typography>
+        </Box>
 
-        <div style={{
+        <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
@@ -44,7 +57,7 @@ export default function index() {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
+        </Box>
 
 
         <Box sx={{
@@ -67,13 +80,12 @@ export default function index() {
             Veja todas as Ofertas</Button>
         </Box>
 
-        <div style={{
+        <Box sx={{
           margin: '50px',
-          fontSize: '20px'
         }}>
-          <h1>Cervejas</h1>
-        </div>
-        <div style={{
+          <Typography variant='h4'>Cervejas</Typography>
+        </Box>
+        <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
@@ -83,9 +95,9 @@ export default function index() {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
+        </Box>
       </Box>
       <Footer />
-    </main>
+    </Box>
   )
 }

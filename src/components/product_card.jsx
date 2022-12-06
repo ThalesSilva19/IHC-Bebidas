@@ -61,15 +61,16 @@ export default function ProductCard(props) {
         <Typography variant='h5' tabIndex="0">Preço: R$</Typography>
         <Counter/>
       </Box>
-      <Button variant='contained'
-        sx={{
-          backgroundColor: '#FFB600',
-          color: '#000000'
-        }}
-      >
-        <Typography variant='h6'>Adicionar ao carrinho</Typography>
-      </Button>
-
+      <Link href='/cart'>
+        <Button variant='contained'
+          sx={{
+            backgroundColor: '#FFB600',
+            color: '#000000'
+          }}
+        >
+          <Typography variant='h6'>Adicionar ao carrinho</Typography>
+        </Button>
+      </Link>
     </Card>
   )
 }

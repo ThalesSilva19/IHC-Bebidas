@@ -79,11 +79,13 @@ export default function CartCard() {
                     >
                         <Typography variant='h6'>Calcular Frete</Typography>
                     </Button>
-                    <Button variant='text'>
-                        <Typography variant='h8' sx={{
-                            textDecoration: 'underline',
-                        }}>Escolher mais produtos</Typography>
-                    </Button>
+                    <Link href='/'>
+                        <Button variant='text'>
+                            <Typography variant='h8' sx={{
+                                textDecoration: 'underline',
+                            }}>Escolher mais produtos</Typography>
+                        </Button>
+                    </Link>
 
                 </Box>
                 {/* PriceTable */}

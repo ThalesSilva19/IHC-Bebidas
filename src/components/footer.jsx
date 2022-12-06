@@ -14,7 +14,7 @@ import { fontWeight } from '@mui/system';
 export default function Footer(props) {
 
   return (
-    <Card variant='outlined' sx={{
+    <Card sx={{
       display: 'flex',
       justifyContent: 'space-around',
       width: '100%',

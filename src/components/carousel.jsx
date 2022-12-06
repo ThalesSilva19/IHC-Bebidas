@@ -16,7 +16,7 @@ export default class NextJsCarousel extends Component {
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                width: '1082px',
+                width: '80%',
                 height: '400px',
                 backgroundColor: '#FFF',
                 border: 'solid 1px gray',

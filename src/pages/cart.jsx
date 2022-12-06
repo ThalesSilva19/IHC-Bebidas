@@ -1,6 +1,6 @@
 import React from 'react'
-
-import { Box } from '@mui/material';
+import Link from 'next/link'
+import { Box, Typography } from '@mui/material';
 
 import Appbar from '../components/appbar';
 import Navbar from '../components/navbar';
@@ -13,10 +13,32 @@ export default function Cart() {
             <Appbar />
             <Navbar />
             <Box sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                columnGap: '8px',
+                marginTop: '16px',
                 marginLeft: '50px',
-                fontSize: '20px'
-            }}>
-                <h4>Home {'>'} Meu Carrinho</h4>
+                width: '100%'
+                }}>
+                <Link href='/'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Home
+                    </Typography>
+                </Link>
+                <Typography variant='h6'>{'>'}</Typography>
+                <Link href='/cart'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Meu Carrinho
+                    </Typography>
+                </Link>
             </Box>
             <Box sx={{
                 width: '100%',

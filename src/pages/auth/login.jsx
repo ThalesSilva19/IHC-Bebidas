@@ -13,10 +13,9 @@ export default function Login() {
             <Appbar />
             <Navbar />
             <Box sx={{
-                marginLeft: '50px',
-                fontSize: '20px'
+                marginLeft: '50px'
             }}>
-                <h4>Home {'>'} Login</h4>
+                <Typography variant='h6'>Home {'>'} Login</Typography>
             </Box>
             <Box sx={{
                 width: '100%',
