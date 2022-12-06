@@ -62,10 +62,10 @@ export default function RegisterCard() {
                     />
                 </LocalizationProvider>
             </Box>
-            <TextField label='CPF' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <TextField label='Telefone' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <TextField label='Senha' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='CPF' type="number" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Telefone' type= "tel" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='E-mail' type="email" variant="outlined"  size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Senha' type="password" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Link href='/auth/login'>
                 <Button variant='contained'
                     sx={{

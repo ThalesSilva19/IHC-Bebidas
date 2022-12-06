@@ -29,6 +29,7 @@ export default function Produto() {
                 flexDirection: 'row',
                 columnGap: '8px',
                 marginTop: '16px',
+                marginBottom: '16px',
                 marginLeft: '50px',
                 width: '100%'
                 }}>

@@ -14,7 +14,9 @@ export default function index() {
       <Appbar />
       <Navbar />
       <Box sx={{
-        margin: '50px'
+        marginTop: '16px',
+        marginBottom: '16px',
+        marginLeft: '50px'
       }}>
         <Box sx={{
           display: 'flex',

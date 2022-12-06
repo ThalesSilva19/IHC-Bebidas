@@ -16,7 +16,7 @@ export default function LoginCard() {
         }}>
             <Typography variant='h4' tabIndex='0'> Acesse sua conta </Typography>
             <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '80%'}}></TextField>
-            <TextField label='Senha' variant="outlined" size="small" sx={{ width: '80%'}}></TextField>
+            <TextField label='Senha' type="password" variant="outlined" size="small" sx={{ width: '80%'}}></TextField>
             <Link href='/'>
                 <Button variant='contained'
                     sx={{
