@@ -14,33 +14,35 @@ export default function Register() {
             <Appbar />
             <Navbar />
             <Box sx={{
-                display: 'flex',
-                flexDirection: 'row',
-                columnGap: '8px',
                 marginTop: '16px',
                 marginBottom: '16px',
-                marginLeft: '50px',
-                width: '100%'
-                }}>
-                <Link href='/'>
-                    <Typography variant='h6' sx={{
-                        "&:hover": {
-                            cursor: 'pointer !important'
-                        },
+                marginLeft: '50px'
+            }}>
+                <Box sx={{
+                    display: 'flex',
+                    flexDirection: 'row',
+                    columnGap: '8px',
                     }}>
-                        Home
-                    </Typography>
-                </Link>
-                <Typography variant='h6'>{'>'}</Typography>
-                <Link href='/auth/register'>
-                    <Typography variant='h6' sx={{
-                        "&:hover": {
-                            cursor: 'pointer !important'
-                        },
-                    }}>
-                        Cadastro
-                    </Typography>
-                </Link>
+                    <Link href='/'>
+                        <Typography variant='h6' sx={{
+                            "&:hover": {
+                                cursor: 'pointer !important'
+                            },
+                        }}>
+                            Home
+                        </Typography>
+                    </Link>
+                    <Typography variant='h6'>{'>'}</Typography>
+                    <Link href='/auth/register'>
+                        <Typography variant='h6' sx={{
+                            "&:hover": {
+                                cursor: 'pointer !important'
+                            },
+                        }}>
+                            Cadastro
+                        </Typography>
+                    </Link>
+                </Box>
             </Box>
             <Box sx={{
                 width: '100%',

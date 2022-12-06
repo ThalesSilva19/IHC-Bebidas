@@ -43,6 +43,7 @@ export default function CartCard() {
                     <Typography variant='h5'>Preço</Typography>
                     <Typography variant='h5'>Qtde.</Typography>
                     <Typography variant='h5'>Total</Typography>
+                    <Typography variant='h5'>Remover</Typography>
                 </Box>
                 <CartItem />
                 <CartItem />
