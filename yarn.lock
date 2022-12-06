@@ -2460,6 +2460,14 @@
   "resolved" "https://registry.npmjs.org/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz"
   "version" "1.2.0"
 
+"vlibras-nextjs@^1.1.2":
+  "integrity" "sha512-ZAfjVlRgMVJrHGOk0QBrKkveTTz6OfywlIIuAbvZmuFvdLEJx+oLhInmpjytNcrEJ0VmGMlLONMnJe1WHLbHVA=="
+  "resolved" "https://registry.npmjs.org/vlibras-nextjs/-/vlibras-nextjs-1.1.2.tgz"
+  "version" "1.1.2"
+  dependencies:
+    "react" "^18.2.0"
+    "react-dom" "^18.2.0"
+
 "which-boxed-primitive@^1.0.2":
   "integrity" "sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg=="
   "resolved" "https://registry.npmjs.org/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz"

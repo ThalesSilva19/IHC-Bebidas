@@ -6,11 +6,14 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
+import VLibras from 'vlibras-nextjs';
+
 import { Box } from '@mui/material'
 
 export default function index() {
   return (
     <main>
+      <VLibras />
       <Appbar />
       <Navbar />
       <div style={{
