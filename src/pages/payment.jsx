@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { Box, Typography } from '@mui/material';
 
@@ -13,10 +14,43 @@ export default function Payment() {
             <Appbar />
             <Navbar />
             <Box sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                columnGap: '8px',
+                marginTop: '16px',
                 marginLeft: '50px',
-                fontSize: '20px'
-            }}>
-                <Typography variant='h6'>Home {'>'} Meu Carrinho {'>'} Pagamento</Typography>
+                width: '100%'
+                }}>
+                <Link href='/'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Home
+                    </Typography>
+                </Link>
+                <Typography variant='h6'>{'>'}</Typography>
+                <Link href='/cart'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Meu Carrinho
+                    </Typography>
+                </Link>
+
+                <Typography variant='h6'>{'>'}</Typography>
+                <Link href='/payment'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Pagamento
+                    </Typography>
+                </Link>
             </Box>
             <Box sx={{
                 width: '100%',

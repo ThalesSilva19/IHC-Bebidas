@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 import Appbar from '../../components/appbar';
 import Navbar from '../../components/navbar';
@@ -13,9 +14,32 @@ export default function Register() {
             <Appbar />
             <Navbar />
             <Box sx={{
-                marginLeft: '50px'
-            }}>
-                <Typography variant='h6'>Home {'>'} Cadastro</Typography>
+                display: 'flex',
+                flexDirection: 'row',
+                columnGap: '8px',
+                marginTop: '16px',
+                marginLeft: '50px',
+                width: '100%'
+                }}>
+                <Link href='/'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Home
+                    </Typography>
+                </Link>
+                <Typography variant='h6'>{'>'}</Typography>
+                <Link href='/auth/register'>
+                    <Typography variant='h6' sx={{
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
+                    }}>
+                        Cadastro
+                    </Typography>
+                </Link>
             </Box>
             <Box sx={{
                 width: '100%',
