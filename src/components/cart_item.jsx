@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
 import Counter from './counter';
 
 import Image from 'next/image';
@@ -15,9 +15,10 @@ export default function CartItem() {
             justifyContent: 'space-between',
             border: 'solid 1px #000',
             height: '128px',
-            width: '1024px',
+            width: '100%',
             paddingLeft: '16px',
             paddingRight: '16px',
+            columnGap: '16px'
         }}>
             {/* Imagem e Nome do Produto */}
             <Box sx={{
@@ -47,6 +48,15 @@ export default function CartItem() {
 
             {/* Subtotal */}
             <Typography variant='h6'>R$ 9,90</Typography>
+
+            {/* Subtotal */}
+            <Button
+                sx={{
+                    color: '#ff0000',
+                    width: '5.83em'
+                }}>
+                <Typography variant='h5' color="ff0000">X</Typography>
+            </Button>
         </Box>
     )
 }

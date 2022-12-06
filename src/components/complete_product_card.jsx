@@ -11,13 +11,15 @@ export default function CompleteProductCard() {
         <Box
             sx={{
                 display: 'flex',
-                flexDirection: 'row',
                 justifyContent: 'space-around',
-                width: '1050px',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                width: '85%',
                 backgroundColor: '#FFFFFF',
                 border: 'solid 1px gray',
                 borderRadius: '8px',
-                padding: '16px'
+                padding: '16px',
+                rowGap: '16px'
             }}
         >
             <Image

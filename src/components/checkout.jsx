@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
 
@@ -61,16 +61,18 @@ export default function Checkout() {
                 </Box>
             </Box>
             <PriceTable/>
-            <Button variant='contained'
-                sx={{
-                    backgroundColor: '#FFB600',
-                    color: '#000000',
-                    width: '256px',
-                    height: '32px'
-                }}
-            >
-                <Typography variant='h6'>Finalizar Compra</Typography>
-            </Button>
+            <Link href='/'>
+                <Button variant='contained'
+                    sx={{
+                        backgroundColor: '#FFB600',
+                        color: '#000000',
+                        width: '256px',
+                        height: '32px'
+                    }}
+                >
+                    <Typography variant='h6'>Finalizar Compra</Typography>
+                </Button>
+            </Link>
         </Card>
     )
 }

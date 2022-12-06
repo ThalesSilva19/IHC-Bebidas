@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import Counter from './counter';
 import { Card, Box, Typography, Button } from '@mui/material';
 
@@ -22,23 +23,30 @@ export default function ProductCard(props) {
       justifyContent: 'center',
       gap: '12px'
     }}>
-      <Box
-        sx={{
-          width: '120px',
-          height: '255px'
-        }}
-      >
-        <Image
-          role="img"
-          tabIndex="0"
-          id="Garrafa de cerveja"
-          src={imagem}
-          aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
-          alt='Garrafa de cerveja com rótulo escrito Quilmes'
-          width={120}
-          height={255}
-        />
-      </Box>
+      <Link href='/products/product_id'>
+        <Box
+          sx={{
+            width: '120px',
+            height: '255px',
+            "&:hover": {
+              cursor: 'pointer !important',
+              visibility: 'visible'
+            },
+          }}
+        >
+          <Image
+            role="img"
+            tabIndex="0"
+            id="Garrafa de cerveja"
+            src={imagem}
+            aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
+            alt='Garrafa de cerveja com rótulo escrito Quilmes'
+            title='Garrafa de cerveja com rótulo escrito Quilmes'
+            width={120}
+            height={255}
+          />
+        </Box>
+      </Link>
       <Typography variant='h4' tabIndex="0" >Nome do Produto</Typography>
       <Box
         sx={{
@@ -53,15 +61,16 @@ export default function ProductCard(props) {
         <Typography variant='h5' tabIndex="0">Preço: R$</Typography>
         <Counter/>
       </Box>
-      <Button variant='contained'
-        sx={{
-          backgroundColor: '#FFB600',
-          color: '#000000'
-        }}
-      >
-        <Typography variant='h6'>Adicionar ao carrinho</Typography>
-      </Button>
-
+      <Link href='/cart'>
+        <Button variant='contained'
+          sx={{
+            backgroundColor: '#FFB600',
+            color: '#000000'
+          }}
+        >
+          <Typography variant='h6'>Adicionar ao carrinho</Typography>
+        </Button>
+      </Link>
     </Card>
   )
 }

@@ -34,11 +34,11 @@ const RightButton = styled.button`
 
 export default function Counter() {
 
-    const [counter, setCounter] = React.useState(0)
+    const [counter, setCounter] = React.useState(1)
 
     function subCounter() {
         console.log('sub')
-        if(counter > 0)
+        if(counter > 1)
             setCounter(counter-1)
     }
 

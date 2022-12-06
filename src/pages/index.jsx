@@ -1,43 +1,55 @@
 import React from 'react'
-
+import Link from 'next/link'
 import NextJsCarousel from '../components/carousel'
 import ProductCard from '../components/product_card'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
-import VLibras from 'vlibras-nextjs';
-
 import { Box } from '@mui/material'
 
 export default function index() {
   return (
     <main>
-      <VLibras />
       <Appbar />
       <Navbar />
-      <div style={{
-        margin: '50px',
-        fontSize: '20px'
+      <Box sx={{
+        marginTop: '16px',
+        marginBottom: '16px',
+        marginLeft: '50px'
       }}>
-        <h1>Home {'>'}</h1>
-      </div>
+        <Box sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          columnGap: '8px',
+          width: '100%'
+        }}>
+          <Link href='/'>
+            <Typography variant='h6' sx={{
+              "&:hover": {
+                cursor: 'pointer !important'
+              },
+            }}>
+              Home
+            </Typography>
+          </Link>
+        </Box>
+      </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '100vw'
+        width: '98%'
       }}>
         <NextJsCarousel />
 
-        <div style={{
-          margin: '50px',
-          fontSize: '20px'
+        <Box sx={{
+          margin: '50px'
         }}>
-          <h1>Ofertas</h1>
-        </div>
+          <Typography variant='h4'>Ofertas</Typography>
+        </Box>
 
-        <div style={{
+        <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
@@ -47,17 +59,17 @@ export default function index() {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
+        </Box>
 
 
-        <div style={{
+        <Box sx={{
           display: 'flex',
           justifyContent: 'center',
           margin: '10px',
           border: '0',
-          borderRadius: '10px'
+          borderRadius: '10px',
         }}>
-          <button style={{
+          <Button variant='contained' sx={{
             backgroundColor: '#FFB600',
             color: '#000000',
             width: '310px',
@@ -67,16 +79,15 @@ export default function index() {
             borderRadius: '10px',
             margin: '10px'
           }}>
-            Veja todas as Ofertas</button>
-        </div>
+            Veja todas as Ofertas</Button>
+        </Box>
 
-        <div style={{
+        <Box sx={{
           margin: '50px',
-          fontSize: '20px'
         }}>
-          <h1>Cervejas</h1>
-        </div>
-        <div style={{
+          <Typography variant='h4'>Cervejas</Typography>
+        </Box>
+        <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
@@ -86,9 +97,9 @@ export default function index() {
           <ProductCard />
           <ProductCard />
           <ProductCard />
-        </div>
+        </Box>
       </Box>
       <Footer />
-    </main>
+    </Box>
   )
 }

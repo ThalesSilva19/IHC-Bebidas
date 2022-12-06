@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -8,7 +8,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 export default function RegisterCard() {
     const [value, setValue] = React.useState(
-        dayjs('2014-08-18T21:11:54')
+        dayjs('2022-12-06T16:00:00')
     );
 
     const handleChange = (newValue) => {
@@ -17,20 +17,23 @@ export default function RegisterCard() {
 
     return (
         <Card sx={{
-            width: '700px',
+            width: '50%',
             padding: '64px',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            textAlign: "center",
             justifyContent: 'center',
             gap: '32px'
         }}>
             <Typography variant='h4' tabIndex='0'> Crie sua conta </Typography>
-            <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
+            <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-evenly'
+                justifyContent: 'space-evenly',
+                flexWrap: 'wrap',
+                rowGap: '16px'
             }}>
                 <Box>
                     <FormLabel id="demo-radio-buttons-group-label" tabIndex='0'>Gênero</FormLabel>
@@ -59,31 +62,22 @@ export default function RegisterCard() {
                     />
                 </LocalizationProvider>
             </Box>
-            <TextField label='CPF' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='Telefone' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='Senha' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <Button variant='contained'
-                sx={{
-                    backgroundColor: '#FFB600',
-                    color: '#000000',
-                    width: '655px',
-                    height: '32px'
-                }}
-            >
-                <Typography variant='h5'>Continuar</Typography>
-            </Button>
-            <Button variant='contained'
-                sx={{
-                    backgroundColor: '#EFEFEF',
-                    color: '#000000',
-                    width: '655px',
-                    height: '32px'
-                }}
-            >
-                <Typography variant='h5'>Criar Conta</Typography>
-            </Button>
-
+            <TextField required label='CPF' type="number" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Telefone' type= "tel" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='E-mail' type="email" variant="outlined"  size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Senha' type="password" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <Link href='/auth/login'>
+                <Button variant='contained'
+                    sx={{
+                        backgroundColor: '#FFB600',
+                        color: '#000000',
+                        width: '98%',
+                        height: '32px'
+                    }}
+                >
+                    <Typography variant='h6'>Continuar</Typography>
+                </Button>
+            </Link>
         </Card>
     )
 }
