@@ -17,7 +17,7 @@ export default function Navbar() {
                 backgroundColor: '#FFB600',
             }}
         >
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',
@@ -28,7 +28,7 @@ export default function Navbar() {
                     },
                 }}>Cervejas</Typography>
             </Link>
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',
@@ -39,7 +39,7 @@ export default function Navbar() {
                     },
                 }}>Kits</Typography>
             </Link>
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',
@@ -50,7 +50,7 @@ export default function Navbar() {
                     },
                 }}>Marcas</Typography>
             </Link>
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',
@@ -61,7 +61,7 @@ export default function Navbar() {
                     },
                 }}>Outras Bebidas</Typography>
             </Link>
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',
@@ -72,7 +72,7 @@ export default function Navbar() {
                     },
                 }}>Promoções</Typography>
             </Link>
-            <Link href="/">
+            <Link href="/product_list">
                 <Typography sx={{
                     padding: '4px 8px 4px 8px',
                     borderLeft: 'solid 1px #000',

@@ -6,7 +6,7 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 
 export default function index() {
   return (

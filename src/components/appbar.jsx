@@ -70,7 +70,7 @@ export default function Footer(props) {
               backgroundColor: 'rgba(255, 182, 0, 0.5)',
               boxShadow: 'none',
             }
-          }}>
+          }} href="/product_list">
           <Image
             src={lupaIcon}
             alt='Confirmar busca'
