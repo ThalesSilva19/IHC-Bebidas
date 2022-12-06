@@ -18,6 +18,7 @@ export default function CartItem() {
             width: '100%',
             paddingLeft: '16px',
             paddingRight: '16px',
+            columnGap: '16px'
         }}>
             {/* Imagem e Nome do Produto */}
             <Box sx={{

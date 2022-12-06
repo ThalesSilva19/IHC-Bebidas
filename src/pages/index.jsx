@@ -6,19 +6,19 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
-import { Box } from '@mui/material'
+import { Box, Button } from '@mui/material'
 
 export default function index() {
   return (
     <main>
       <Appbar />
       <Navbar />
-      <div style={{
+      <Box sx={{
         margin: '50px',
         fontSize: '20px'
       }}>
-        <h1>Home {'>'}</h1>
-      </div>
+        <h4>Home {'>'}</h4>
+      </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -47,14 +47,14 @@ export default function index() {
         </div>
 
 
-        <div style={{
+        <Box sx={{
           display: 'flex',
           justifyContent: 'center',
           margin: '10px',
           border: '0',
-          borderRadius: '10px'
+          borderRadius: '10px',
         }}>
-          <button style={{
+          <Button variant='contained' sx={{
             backgroundColor: '#FFB600',
             color: '#000000',
             width: '310px',
@@ -64,8 +64,8 @@ export default function index() {
             borderRadius: '10px',
             margin: '10px'
           }}>
-            Veja todas as Ofertas</button>
-        </div>
+            Veja todas as Ofertas</Button>
+        </Box>
 
         <div style={{
           margin: '50px',

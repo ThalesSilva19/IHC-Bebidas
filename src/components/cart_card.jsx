@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import { Box, Card, Typography, TextField, Button } from '@mui/material';
 
 import CartItem from './cart_item';
@@ -23,7 +23,27 @@ export default function CartCard() {
                 width: '100%',
                 marginRight: '32px',
                 marginBottom: '32px'
-            }}>
+            }}> 
+                <Box sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    border: 'solid 1px #000',
+                    height: '64px',
+                    width: '100%',
+                    paddingLeft: '16px',
+                    paddingRight: '16px',
+                    columnGap: '16px'
+                }}> 
+                    <Box sx={{
+                        width: 'calc(45px + 0.67em*15)'
+                    }}>
+                        <Typography variant='h5'>Produto</Typography>
+                    </Box>
+                    <Typography variant='h5'>Preço</Typography>
+                    <Typography variant='h5'>Qtde.</Typography>
+                    <Typography variant='h5'>Total</Typography>
+                </Box>
                 <CartItem />
                 <CartItem />
                 <CartItem />
@@ -75,16 +95,18 @@ export default function CartCard() {
                     gap: '8px'
                 }}>
                     <PriceTable />
-                    <Button variant='contained'
-                        sx={{
-                            backgroundColor: '#FFB600',
-                            color: '#000000',
-                            width: '256px',
-                            height: '32px'
-                        }}
-                    >
-                        <Typography variant='h6'>Continuar</Typography>
-                    </Button>
+                    <Link href='/payment'>
+                        <Button variant='contained'
+                            sx={{
+                                backgroundColor: '#FFB600',
+                                color: '#000000',
+                                width: '256px',
+                                height: '32px'
+                            }}
+                        >
+                            <Typography variant='h6'>Continuar</Typography>
+                        </Button>
+                    </Link>
                 </Box>
 
             </Box>

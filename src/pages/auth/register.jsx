@@ -13,11 +13,16 @@ export default function Register() {
             <Appbar />
             <Navbar />
             <Box sx={{
+                marginLeft: '50px',
+                fontSize: '20px'
+            }}>
+                <h4>Home {'>'} Cadastro</h4>
+            </Box>
+            <Box sx={{
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                paddingTop: '64px',
                 paddingBottom: '64px',
             }}>
                 <RegisterCard />

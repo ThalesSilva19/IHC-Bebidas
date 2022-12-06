@@ -16,13 +16,19 @@ export default function Footer(props) {
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
+      flexWrap: 'wrap',
       justifyContent: 'space-around',
       Width: '100%',
-      height: '20vh',
       backgroundColor: '#FFFFFF',
+      columnGap: '16px'
     }}>
       <Link href="/">
         <Box sx={{
+          paddingTop: '8px',
+          paddingLeft: '8px',
+          "&:hover": {
+            cursor: 'pointer !important'
+          },
         }}
         >
           <Image
@@ -33,7 +39,7 @@ export default function Footer(props) {
           />
         </Box>
       </Link>
-      <div>
+      <Box>
         <TextField label="Buscar Produtos" backgroundColor='white'
           // O código abaixo é para modificar as propriedades da borda do Textfield
           sx={{
@@ -71,27 +77,30 @@ export default function Footer(props) {
             height="41vh"
           />
         </Button>
-      </div>
-      <div>
-        <Button sx={{
-          marginLeft: "25vh",
-          marginRight: "1vh"
-        }}>
-          <Image
-            src={usuarioIcon}
-            alt='Perfil de usuário'
-            width="40vh"
-            height="40vh" />
-        </Button>
-
-        <Button>
-          <Image
-            src={carrinhoIcon}
-            alt='Carrinho de compras'
-            width="40vh"
-            height="40vh" />
-        </Button>
-      </div>
+      </Box>
+      <Box>
+        <Link href="/auth/login">
+          <Button sx={{
+            marginLeft: "25vh",
+            marginRight: "1vh"
+          }}>
+            <Image
+              src={usuarioIcon}
+              alt='Perfil de usuário'
+              width="40vh"
+              height="40vh" />
+          </Button>
+        </Link>
+        <Link href="/cart">
+          <Button>
+            <Image
+              src={carrinhoIcon}
+              alt='Carrinho de compras'
+              width="40vh"
+              height="40vh" />
+          </Button>
+        </Link>
+      </Box>
     </Card>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link'
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -22,6 +22,7 @@ export default function RegisterCard() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            textAlign: "center",
             justifyContent: 'center',
             gap: '32px'
         }}>
@@ -65,27 +66,18 @@ export default function RegisterCard() {
             <TextField label='Telefone' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <TextField label='Senha' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <Button variant='contained'
-                sx={{
-                    backgroundColor: '#FFB600',
-                    color: '#000000',
-                    width: '98%',
-                    height: '32px'
-                }}
-            >
-                <Typography variant='h5'>Continuar</Typography>
-            </Button>
-            <Button variant='contained'
-                sx={{
-                    backgroundColor: '#EFEFEF',
-                    color: '#000000',
-                    width: '98%',
-                    height: '32px'
-                }}
-            >
-                <Typography variant='h5'>Criar Conta</Typography>
-            </Button>
-
+            <Link href='/auth/login'>
+                <Button variant='contained'
+                    sx={{
+                        backgroundColor: '#FFB600',
+                        color: '#000000',
+                        width: '98%',
+                        height: '32px'
+                    }}
+                >
+                    <Typography variant='h6'>Continuar</Typography>
+                </Button>
+            </Link>
         </Card>
     )
 }
