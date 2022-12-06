@@ -8,7 +8,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
 export default function RegisterCard() {
     const [value, setValue] = React.useState(
-        dayjs('2014-08-18T21:11:54')
+        dayjs('2022-12-06T16:00:00')
     );
 
     const handleChange = (newValue) => {
@@ -17,7 +17,7 @@ export default function RegisterCard() {
 
     return (
         <Card sx={{
-            width: '700px',
+            width: '50%',
             padding: '64px',
             display: 'flex',
             flexDirection: 'column',
@@ -26,11 +26,13 @@ export default function RegisterCard() {
             gap: '32px'
         }}>
             <Typography variant='h4' tabIndex='0'> Crie sua conta </Typography>
-            <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
+            <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-evenly'
+                justifyContent: 'space-evenly',
+                flexWrap: 'wrap',
+                rowGap: '16px'
             }}>
                 <Box>
                     <FormLabel id="demo-radio-buttons-group-label" tabIndex='0'>Gênero</FormLabel>
@@ -59,15 +61,15 @@ export default function RegisterCard() {
                     />
                 </LocalizationProvider>
             </Box>
-            <TextField label='CPF' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='Telefone' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
-            <TextField label='Senha' variant="outlined" size="small" sx={{ width: '655px' }}></TextField>
+            <TextField label='CPF' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField label='Telefone' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField label='E-mail' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField label='Senha' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Button variant='contained'
                 sx={{
                     backgroundColor: '#FFB600',
                     color: '#000000',
-                    width: '655px',
+                    width: '98%',
                     height: '32px'
                 }}
             >
@@ -77,7 +79,7 @@ export default function RegisterCard() {
                 sx={{
                     backgroundColor: '#EFEFEF',
                     color: '#000000',
-                    width: '655px',
+                    width: '98%',
                     height: '32px'
                 }}
             >

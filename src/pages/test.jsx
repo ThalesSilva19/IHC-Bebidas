@@ -1,9 +1,9 @@
 import React from 'react';
 
 import Checkout from '../components/checkout';
-import Login from '../components/login';
-import Register from '../components/register';
-import Cart from '../components/cart';
+import Login from '../components/login_card';
+import Register from '../components/register_card';
+import Cart from '../components/cart_card';
 
 export default function Test() {
   return (

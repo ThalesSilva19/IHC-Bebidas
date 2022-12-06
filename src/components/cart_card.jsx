@@ -8,7 +8,7 @@ import PriceTable from './price_table';
 export default function CartCard() {
     return (
         <Card sx={{
-            width: '1024px',
+            width: '75%',
             padding: '32px',
             display: 'flex',
             flexDirection: 'column',
@@ -19,7 +19,11 @@ export default function CartCard() {
             <Typography variant='h4'>Meu Carrinho</Typography>
 
             {/* Produtos */}
-            <Box>
+            <Box sx={{
+                width: '100%',
+                marginRight: '32px',
+                marginBottom: '32px'
+            }}>
                 <CartItem />
                 <CartItem />
                 <CartItem />
@@ -31,7 +35,8 @@ export default function CartCard() {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                width: '100%'
+                flexWrap: 'wrap',
+                width: '100%',
             }}>
                 {/* CEP */}
                 <Box

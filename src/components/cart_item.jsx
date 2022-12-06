@@ -15,7 +15,7 @@ export default function CartItem() {
             justifyContent: 'space-between',
             border: 'solid 1px #000',
             height: '128px',
-            width: '1024px',
+            width: '100%',
             paddingLeft: '16px',
             paddingRight: '16px',
         }}>
