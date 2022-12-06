@@ -2,9 +2,8 @@ import React from 'react'
 
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+
+import PriceTable from './price_table';
 
 export default function Checkout() {
     const [value, setValue] = React.useState(
@@ -61,6 +60,7 @@ export default function Checkout() {
                     <TextField tabIndex='0' aria-label='CPF do titular'          label='CPF do Titular' variant="outlined" size="small" sx={{ width: '256px' }}></TextField>
                 </Box>
             </Box>
+            <PriceTable/>
             <Button variant='contained'
                 sx={{
                     backgroundColor: '#FFB600',

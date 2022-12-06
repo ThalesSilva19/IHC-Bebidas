@@ -3,6 +3,7 @@ import React from 'react';
 import Checkout from '../components/checkout';
 import Login from '../components/login';
 import Register from '../components/register';
+import Cart from '../components/cart';
 
 export default function Test() {
   return (
@@ -13,6 +14,8 @@ export default function Test() {
         <Login/>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <Register/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <Cart/>
     </>
   )
 }

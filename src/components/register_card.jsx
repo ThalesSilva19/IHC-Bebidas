@@ -6,7 +6,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 
-export default function Register() {
+export default function RegisterCard() {
     const [value, setValue] = React.useState(
         dayjs('2014-08-18T21:11:54')
     );

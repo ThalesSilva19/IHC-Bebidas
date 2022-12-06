@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Card, Typography, FormLabel, TextField, Button } from '@mui/material';
 
-export default function Login() {
+export default function LoginCard() {
     return (
         <Card sx={{
             width: '300px',
