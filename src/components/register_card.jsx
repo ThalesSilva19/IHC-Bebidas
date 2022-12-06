@@ -27,7 +27,7 @@ export default function RegisterCard() {
             gap: '32px'
         }}>
             <Typography variant='h4' tabIndex='0'> Crie sua conta </Typography>
-            <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Nome Completo' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
@@ -51,20 +51,10 @@ export default function RegisterCard() {
                         <FormControlLabel value="other" tabIndex='0' control={<Radio />} label="Não Responder" />
                     </RadioGroup>
                 </Box>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DesktopDatePicker
-                        label="Calendário de datas"
-                        inputFormat="MM/DD/YYYY"
-                        value={value}
-                        onChange={handleChange}
-                        renderInput={(params) => <TextField {...params} />}
-
-                    />
-                </LocalizationProvider>
             </Box>
             <TextField required label='CPF' type="number" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <TextField required label='Telefone' type= "tel" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
-            <TextField required label='E-mail' type="email" variant="outlined"  size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='Telefone' type="tel" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
+            <TextField required label='E-mail' type="email" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <TextField required label='Senha' type="password" variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Link href='/auth/login'>
                 <Button variant='contained'
