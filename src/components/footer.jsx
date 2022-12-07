@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { Card, Box, Typography } from '@mui/material';
-
 import Image from 'next/image'
-
 import logo from '../public/images/logo.png'
 import celularIcon from '../public/images/celular.png'
 import formasPagamento from '../public/images/bandeiras-cartoes.png'

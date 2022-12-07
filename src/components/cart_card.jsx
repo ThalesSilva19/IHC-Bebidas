@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { Box, Card, Typography, TextField, Button } from '@mui/material';
-
 import CartItem from './cart_item';
 import PriceTable from './price_table';
 
@@ -9,11 +8,11 @@ export default function CartCard() {
     return (
         <Card sx={{
             width: '75%',
-            padding: '32px',
+            padding: 'calc(8px + 1.5625vw)',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            gap: '16px'
+            gap: 'calc((8px + 1.5625vw)/2)'
         }}>
             {/* Título */}
             <Typography variant='h4' tabIndex='0'>Meu Carrinho</Typography>
@@ -21,19 +20,19 @@ export default function CartCard() {
             {/* Produtos */}
             <Box sx={{
                 width: '100%',
-                marginRight: '32px',
-                marginBottom: '32px'
+                marginRight: 'calc(8px + 1.5625vw)',
+                marginBottom: 'calc(8px + 1.5625vw)'
             }}> 
                 <Box sx={{
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     border: 'solid 1px #000',
-                    height: '64px',
+                    height: 'calc((8px + 1.5625vw)*2)',
                     width: '100%',
-                    paddingLeft: '16px',
-                    paddingRight: '16px',
-                    columnGap: '16px'
+                    paddingLeft: 'calc((8px + 1.5625vw)/2)',
+                    paddingRight: 'calc((8px + 1.5625vw)/2)',
+                    columnGap: 'calc((8px + 1.5625vw)/2)'
                 }}> 
                     <Box sx={{
                         width: 'calc(45px + 0.67em*15)'
@@ -64,7 +63,7 @@ export default function CartCard() {
                     sx={{
                         display: 'flex',
                         flexDirection: 'column',
-                        gap: '16px',
+                        gap: 'calc((8px + 1.5625vw)/2)',
                         justifyContent: 'space-between',
                         height: 'auto'
                     }}
@@ -95,7 +94,7 @@ export default function CartCard() {
                     flexDirection: 'column',
                     height: 'auto',
                     justifyContent: 'space-between',
-                    gap: '8px'
+                    gap: 'calc((8px + 1.5625vw)/4)'
                 }}>
                     <PriceTable />
                     <Link href='/payment'>

@@ -14,18 +14,19 @@ export default function index() {
       <Appbar />
       <Navbar />
       <Box sx={{
-        marginTop: '16px',
-        marginBottom: '16px',
-        marginLeft: '50px'
+        marginTop: 'calc((8px + 1.5625vw)/2)',
+        marginBottom: 'calc((8px + 1.5625vw)/2)',
+        marginLeft: 'calc(8px + 1.5625vw)'
       }}>
         <Box sx={{
           display: 'flex',
           flexDirection: 'row',
-          columnGap: '8px',
+          columnGap: 'calc((8px + 1.5625vw)/4)',
           width: '100%'
         }}>
           <Link href='/'>
-            <Typography variant='h3' tabIndex='0' sx={{
+            <Typography variant='h4' tabIndex='0' sx={{
+              fontSize: '1em',
               "&:hover": {
                 cursor: 'pointer !important'
               },
@@ -44,17 +45,17 @@ export default function index() {
         <NextJsCarousel />
 
         <Box sx={{
-          margin: '50px'
+          margin: 'calc((8px + 1.5625vw)*1.5)'
         }}>
-          <Typography variant='h3'>Ofertas</Typography>
+          <Typography variant='h4' sx={{fontSize: '2em'}}>Ofertas</Typography>
         </Box>
 
         <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
-          gap: '16px',
-          margin: '10px'
+          gap: 'calc((8px + 1.5625vw)/2)',
+          margin: 'calc((8px + 1.5625vw)/2)'
         }}>
           <ProductCard />
           <ProductCard />
@@ -65,34 +66,34 @@ export default function index() {
         <Box sx={{
           display: 'flex',
           justifyContent: 'center',
-          margin: '10px',
+          margin: 'calc((8px + 1.5625vw)/2)',
           border: '0',
-          borderRadius: '10px',
+          borderRadius: 'calc((8px + 1.5625vw)/2)',
         }}>
           <Button variant='contained' sx={{
             backgroundColor: '#FFB600',
             color: '#000000',
-            width: '310px',
-            height: '65px',
-            fontSize: '20px',
+            width: 'auto',
+            height: 'auto',
+            fontSize: '1.2em',
             border: '0',
-            borderRadius: '10px',
-            margin: '10px'
+            borderRadius: 'calc((8px + 1.5625vw)/4)',
+            margin: 'calc((8px + 1.5625vw)/4)'
           }}>
             Veja todas as Ofertas</Button>
         </Box>
 
         <Box sx={{
-          margin: '50px',
+          margin: 'calc((8px + 1.5625vw)*1.5)',
         }}>
-          <Typography variant='h3'>Cervejas</Typography>
+          <Typography variant='h4' sx={{fontSize: '2em'}}>Cervejas</Typography>
         </Box>
         <Box sx={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
-          gap: '16px',
-          marginBottom: '100px'
+          gap: 'calc((8px + 1.5625vw)/2)',
+          marginBottom: 'calc((8px + 1.5625vw)*3)'
         }}>
           <ProductCard />
           <ProductCard />

@@ -1,9 +1,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { Card, Box, TextField, Button } from '@mui/material';
-
 import Image from 'next/image'
-
 import logo from '../public/images/logo.png'
 import carrinhoIcon from '../public/images/carrinho-carrinho.png'
 import usuarioIcon from '../public/images/perfil-de-usuario.png'
@@ -20,12 +18,12 @@ export default function Footer(props) {
       justifyContent: 'space-around',
       Width: '100%',
       backgroundColor: '#FFFFFF',
-      columnGap: '16px'
+      columnGap: 'calc((8px + 1.5625vw)/2)'
     }}>
       <Link href="/">
         <Box sx={{
-          paddingTop: '8px',
-          paddingLeft: '8px',
+          paddingTop: 'calc((8px + 1.5625vw)/4)',
+          paddingLeft: 'calc((8px + 1.5625vw)/4)',
           "&:hover": {
             cursor: 'pointer !important'
           },

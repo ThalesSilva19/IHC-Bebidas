@@ -1,10 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-
 import { useRouter } from 'next/router';
 import CompleteProductCard from '../../components/complete_product_card';
-
-import { Card, Box, Typography, Button } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Navbar from '../../components/navbar';
 import Appbar from '../../components/appbar';
 import Footer from '../../components/footer';
@@ -25,34 +23,44 @@ export default function Produto() {
       <Appbar />
       <Navbar />
       <Box sx={{
-                marginTop: '16px',
-                marginBottom: '16px',
-                marginLeft: '50px'
+                marginTop: 'calc((8px + 1.5625vw)/2)',
+                marginBottom: 'calc((8px + 1.5625vw)/2)',
+                marginLeft: 'calc((8px + 1.5625vw)*1.5)'
             }}>
         <Box sx={{
                   display: 'flex',
                   flexDirection: 'row',
-                  columnGap: '8px'
+                  columnGap: 'calc((8px + 1.5625vw)/4)'
                   }}>
                   <Link href='/'>
                       <Typography variant='h6' sx={{
-                          "&:hover": {
-                              cursor: 'pointer !important'
-                          },
+                        fontSize: '1em',
+                        "&:hover": {
+                            cursor: 'pointer !important'
+                        },
                       }}>
                           Home
                       </Typography>
                   </Link>
-                  <Typography variant='h6'>{'>'}</Typography>
-                  <Typography variant='h6'>Cerveja 1234</Typography>
+                  <Typography variant='h6' sx={{fontSize: '1em'}}>{'>'}</Typography>
+                  <Link href='/products/product_id'>
+                    <Typography variant='h6' sx={{
+                      fontSize: '1em',
+                      "&:hover": {
+                        cursor: 'pointer !important'
+                      },
+                    }}>
+                      Cerveja 1234
+                    </Typography>
+                  </Link>
               </Box>
       </Box>
       <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: '64px',
-        gap: '64px'
+        padding: 'calc((8px + 1.5625vw)*2)',
+        gap: 'calc((8px + 1.5625vw)*2)',
       }}>
         <CompleteProductCard />
         <NextJsCarousel />

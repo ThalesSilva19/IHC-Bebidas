@@ -2,9 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import Counter from './counter';
 import { Card, Box, Typography, Button } from '@mui/material';
-
 import Image from 'next/image'
-
 import imagem from '../public/images/cerveja.png'
 
 export default function ProductCard(props) {
@@ -12,8 +10,8 @@ export default function ProductCard(props) {
   return (
     <Card variant='outlined' sx={{
       backgroundColor: '#FFFFFF',
-      width: '330px',
-      height: '450px',
+      width: {xs: '80vw', sm: '40vw', md:'20vw'},
+      height: 'auto',
       borderColor: '#CBCBCB',
       borderWidth: '3px',
       borderRadius: '8px',
@@ -21,13 +19,14 @@ export default function ProductCard(props) {
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: '12px'
+      padding: 'calc((8px + 1.5625vw)/2)',
+      gap: 'calc((8px + 1.5625vw)/2)'
     }}>
       <Link href='/products/product_id'>
         <Box
           sx={{
-            width: '120px',
-            height: '255px',
+            width: {xs: '12vw', sm: '8vw', md:'5vw'},
+            height: 'auto',
             "&:hover": {
               cursor: 'pointer !important',
               visibility: 'visible'
@@ -42,12 +41,10 @@ export default function ProductCard(props) {
             aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
             alt='Garrafa de cerveja com rótulo escrito Quilmes'
             title='Garrafa de cerveja com rótulo escrito Quilmes'
-            width={120}
-            height={255}
           />
         </Box>
       </Link>
-      <Typography variant='h4' tabIndex="0" >Nome do Produto</Typography>
+      <Typography variant='h4' tabIndex="0" sx={{fontSize:'1.5em'}}>Nome do Produto</Typography>
       <Box
         sx={{
           htmlFontSize: 10,
@@ -58,7 +55,7 @@ export default function ProductCard(props) {
           width: '60%'
         }}
       >
-        <Typography variant='h5' tabIndex="0">Preço: R$</Typography>
+        <Typography variant='h5' tabIndex="0" sx={{fontSize:'1.2em'}}>Preço: R$</Typography>
         <Counter/>
       </Box>
       <Link href='/cart'>
@@ -68,7 +65,7 @@ export default function ProductCard(props) {
             color: '#000000'
           }}
         >
-          <Typography variant='h6'>Adicionar ao carrinho</Typography>
+          <Typography variant='h6' sx={{fontSize:'1.25em'}}>Adicionar ao carrinho</Typography>
         </Button>
       </Link>
     </Card>

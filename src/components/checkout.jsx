@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
-
 import PriceTable from './price_table';
 
 export default function Checkout() {

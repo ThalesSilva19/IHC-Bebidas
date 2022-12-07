@@ -1,9 +1,6 @@
 import React from 'react'
-
 import styled from 'styled-components';
-
 import { Box, Typography } from '@mui/material'
-import { borderTopColor } from '@mui/system';
 
 const LeftButton = styled.button`
     width: 25px;

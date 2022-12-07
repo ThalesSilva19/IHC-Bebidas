@@ -1,6 +1,5 @@
 import React from 'react'
-
-import { Box, TableContainer, TableRow, Table, TableCell, TableHead, TableBody, Paper } from '@mui/material';
+import { Box, TableContainer, TableRow, Table, TableCell, TableBody, Paper } from '@mui/material';
 
 export default function PriceTable() {
     return (

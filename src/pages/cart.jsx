@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { Box, Typography } from '@mui/material';
-
 import Appbar from '../components/appbar';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
@@ -13,17 +12,18 @@ export default function Cart() {
             <Appbar />
             <Navbar />
             <Box sx={{
-                marginTop: '16px',
-                marginBottom: '16px',
-                marginLeft: '50px'
+                marginTop: 'calc((8px + 1.5625vw)/2)',
+                marginBottom: 'calc((8px + 1.5625vw)/2)',
+                marginLeft: 'calc((8px + 1.5625vw)*1.5)'
             }}>
                 <Box sx={{
                     display: 'flex',
                     flexDirection: 'row',
-                    columnGap: '8px',
+                    columnGap: 'calc((8px + 1.5625vw)/2)',
                     }}>
                     <Link href='/'>
                         <Typography variant='h4' tabIndex='0' sx={{
+                            fontSize: '1em',
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },
@@ -31,9 +31,10 @@ export default function Cart() {
                             Home
                         </Typography>
                     </Link>
-                    <Typography variant='h4' tabIndex='0'>{'>'}</Typography>
+                    <Typography variant='h4' tabIndex='0' sx={{fontSize:'1em'}}>{'>'}</Typography>
                     <Link href='/cart'>
                         <Typography variant='h4' tabIndex='0' sx={{
+                            fontSize: '1em',
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },
@@ -48,7 +49,7 @@ export default function Cart() {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                paddingBottom: '64px',
+                paddingBottom: 'calc((8px + 1.5625vw)*2)',
             }}>
                 <CartCard/>
             </Box>

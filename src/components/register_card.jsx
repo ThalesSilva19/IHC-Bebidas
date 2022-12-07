@@ -18,22 +18,22 @@ export default function RegisterCard() {
     return (
         <Card sx={{
             width: '50%',
-            padding: '64px',
+            padding: '4em',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
             textAlign: "center",
             justifyContent: 'center',
-            gap: '32px'
+            gap: '2em'
         }}>
-            <Typography variant='h4' tabIndex='0'> Crie sua conta </Typography>
+            <Typography variant='h4' tabIndex='0' sx={{fontSize:'2.5em'}}> Crie sua conta </Typography>
             <TextField label='Nome Completo' variant="outlined" size="small" sx={{ width: '98%' }}></TextField>
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-evenly',
                 flexWrap: 'wrap',
-                rowGap: '16px'
+                rowGap: '1em'
             }}>
                 <Box>
                     <FormLabel id="demo-radio-buttons-group-label" tabIndex='0'>Gênero</FormLabel>
@@ -72,10 +72,10 @@ export default function RegisterCard() {
                         backgroundColor: '#FFB600',
                         color: '#000000',
                         width: '98%',
-                        height: '32px'
+                        height: 'auto'
                     }}
                 >
-                    <Typography variant='h6'>Continuar</Typography>
+                    <Typography variant='h6' sx={{fontSize:'1.5em'}}>Continuar</Typography>
                 </Button>
             </Link>
         </Card>

@@ -5,7 +5,7 @@ import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Appbar from '../components/appbar'
 
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 
 export default function index() {
     return (
@@ -13,27 +13,33 @@ export default function index() {
             <Appbar />
             <Navbar />
             <Box sx={{
-                marginTop: '16px',
-                marginBottom: '16px',
-                marginLeft: '50px'
+                marginTop: 'calc((8px + 1.5625vw)/2)',
+                marginBottom: 'calc((8px + 1.5625vw)/2)',
+                marginLeft: 'calc((8px + 1.5625vw)*2)',
             }}>
                 <Box sx={{
                     display: 'flex',
                     flexDirection: 'row',
-                    columnGap: '8px',
+                    columnGap: 'calc((8px + 1.5625vw)/4)',
                     width: '100%'
                 }}>
                     <Link href='/'>
                         <Typography variant='h4' sx={{
+                            fontSize: '1em',
                             "&:hover": {
-                                cursor: 'pointer !important'
+                                cursor: 'pointer !important',
                             },
                         }}>
                             Home
                         </Typography>
                     </Link>
-                        <Typography variant='h4'>{'>'}</Typography>
-                        <Typography variant='h4'>Lista de Produtos</Typography>
+                        <Typography variant='h4' sx={{fontSize: '1em',}}>{'>'}</Typography>
+                        <Typography variant='h4' sx={{
+                            fontSize: '1em',
+                            "&:hover": {
+                                cursor: 'pointer !important',
+                            },
+                        }}>Lista de Produtos</Typography>
                 </Box>
             </Box>
             <Box sx={{
@@ -47,8 +53,8 @@ export default function index() {
                     display: 'flex',
                     flexWrap: 'wrap',
                     justifyContent: 'space-evenly',
-                    gap: '16px',
-                    margin: '10px'
+                    gap: 'calc(8px + 1.5625vw)',
+                    margin: 'calc((8px + 1.5625vw)/2)'
                 }}>
                     <ProductCard />
                     <ProductCard />
@@ -59,17 +65,17 @@ export default function index() {
                 <Box sx={{
                     display: 'flex',
                     justifyContent: 'center',
-                    margin: '10px',
+                    margin: 'calc((8px + 1.5625vw)/2)',
                     border: '0',
-                    borderRadius: '10px',
+                    borderRadius: 'calc((8px + 1.5625vw)/2)',
                 }}>
 
                     <Box sx={{
                         display: 'flex',
                         flexWrap: 'wrap',
                         justifyContent: 'space-evenly',
-                        gap: '16px',
-                        marginBottom: '100px'
+                        gap: 'calc(8px + 1.5625vw)',
+                        marginBottom: 'calc((8px + 1.5625vw)*3)'
                     }}>
                         <ProductCard />
                         <ProductCard />

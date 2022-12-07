@@ -1,8 +1,6 @@
 import GlobalStyle from "../styles/global";
 import { ThemeProvider } from 'styled-components'
-
 import VLibras from 'vlibras-nextjs';
-
 import { COLORS } from '../styles/colors'
 const theme = {
   colors: COLORS

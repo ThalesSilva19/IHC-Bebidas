@@ -1,10 +1,7 @@
 import React from 'react';
-
 import { Box, Typography, Button } from '@mui/material';
 import Counter from './counter';
-
 import Image from 'next/image';
-
 import imagem from '../public/images/cerveja.png';
 
 export default function CartItem() {
@@ -16,16 +13,16 @@ export default function CartItem() {
             border: 'solid 1px #000',
             height: '128px',
             width: '100%',
-            paddingLeft: '16px',
-            paddingRight: '16px',
-            columnGap: '16px'
+            paddingLeft: 'calc((8px + 1.5625vw)/2)',
+            paddingRight: 'calc((8px + 1.5625vw)/2)',
+            columnGap: 'calc((8px + 1.5625vw)/2)'
         }}>
             {/* Imagem e Nome do Produto */}
             <Box sx={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '16px'
+                gap: 'calc((8px + 1.5625vw)/2)'
             }}>
                 <Image
                     role="img"
