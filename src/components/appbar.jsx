@@ -72,6 +72,7 @@ export default function Footer(props) {
           <Image
             src={lupaIcon}
             alt='Confirmar busca'
+            title='Confirmar busca'
             width="41vh"
             height="41vh"
           />
