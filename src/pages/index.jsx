@@ -25,7 +25,7 @@ export default function index() {
           width: '100%'
         }}>
           <Link href='/'>
-            <Typography variant='h6' sx={{
+            <Typography variant='h3' tabIndex='0' sx={{
               "&:hover": {
                 cursor: 'pointer !important'
               },
@@ -46,7 +46,7 @@ export default function index() {
         <Box sx={{
           margin: '50px'
         }}>
-          <Typography variant='h4'>Ofertas</Typography>
+          <Typography variant='h3'>Ofertas</Typography>
         </Box>
 
         <Box sx={{
@@ -85,7 +85,7 @@ export default function index() {
         <Box sx={{
           margin: '50px',
         }}>
-          <Typography variant='h4'>Cervejas</Typography>
+          <Typography variant='h3'>Cervejas</Typography>
         </Box>
         <Box sx={{
           display: 'flex',

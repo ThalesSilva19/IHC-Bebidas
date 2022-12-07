@@ -24,7 +24,7 @@ export default function Payment() {
                     columnGap: '8px',
                     }}>
                     <Link href='/'>
-                        <Typography variant='h6' sx={{
+                        <Typography variant='h4' sx={{
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },
@@ -32,9 +32,9 @@ export default function Payment() {
                             Home
                         </Typography>
                     </Link>
-                    <Typography variant='h6'>{'>'}</Typography>
+                    <Typography variant='h4'>{'>'}</Typography>
                     <Link href='/cart'>
-                        <Typography variant='h6' sx={{
+                        <Typography variant='h4' sx={{
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },
@@ -43,9 +43,9 @@ export default function Payment() {
                         </Typography>
                     </Link>
 
-                    <Typography variant='h6'>{'>'}</Typography>
+                    <Typography variant='h4'>{'>'}</Typography>
                     <Link href='/payment'>
-                        <Typography variant='h6' sx={{
+                        <Typography variant='h4' sx={{
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },

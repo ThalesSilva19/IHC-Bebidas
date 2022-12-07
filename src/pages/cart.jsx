@@ -23,7 +23,7 @@ export default function Cart() {
                     columnGap: '8px',
                     }}>
                     <Link href='/'>
-                        <Typography variant='h6' sx={{
+                        <Typography variant='h4' tabIndex='0' sx={{
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },
@@ -31,9 +31,9 @@ export default function Cart() {
                             Home
                         </Typography>
                     </Link>
-                    <Typography variant='h6'>{'>'}</Typography>
+                    <Typography variant='h4' tabIndex='0'>{'>'}</Typography>
                     <Link href='/cart'>
-                        <Typography variant='h6' sx={{
+                        <Typography variant='h4' tabIndex='0' sx={{
                             "&:hover": {
                                 cursor: 'pointer !important'
                             },

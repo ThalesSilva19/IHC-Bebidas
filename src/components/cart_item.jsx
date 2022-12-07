@@ -37,17 +37,17 @@ export default function CartItem() {
                     width={45}
                     height={96}
                 />
-                <Typography variant='h6'>Nome do Produto</Typography>
+                <Typography variant='h6' tabIndex='0'>Nome do Produto</Typography>
             </Box>
 
             {/* Preço unitário do Produto */}
-            <Typography variant='h6'>R$ 9,90</Typography>
+            <Typography variant='h6' tabIndex='0'>R$ 9,90</Typography>
 
             {/* Quantidade */}
             <Counter/>
 
             {/* Subtotal */}
-            <Typography variant='h6'>R$ 9,90</Typography>
+            <Typography variant='h6' tabIndex='0'>R$ 9,90</Typography>
 
             {/* Subtotal */}
             <Button
@@ -55,7 +55,7 @@ export default function CartItem() {
                     color: '#ff0000',
                     width: '5.83em'
                 }}>
-                <Typography variant='h5' color="ff0000">X</Typography>
+                <Typography variant='h5' tabIndex='0' aria-label='Clique para remover o produto do carrinho' color="ff0000">X</Typography>
             </Button>
         </Box>
     )

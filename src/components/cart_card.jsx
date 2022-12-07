@@ -16,7 +16,7 @@ export default function CartCard() {
             gap: '16px'
         }}>
             {/* Título */}
-            <Typography variant='h4'>Meu Carrinho</Typography>
+            <Typography variant='h4' tabIndex='0'>Meu Carrinho</Typography>
 
             {/* Produtos */}
             <Box sx={{
@@ -42,7 +42,7 @@ export default function CartCard() {
                     </Box>
                     <Typography variant='h5'>Preço</Typography>
                     <Typography variant='h5'>Qtde.</Typography>
-                    <Typography variant='h5'>Total</Typography>
+                    <Typography variant='h5'>Subtotal</Typography>
                     <Typography variant='h5'>Remover</Typography>
                 </Box>
                 <CartItem />
@@ -107,7 +107,7 @@ export default function CartCard() {
                                 height: '32px'
                             }}
                         >
-                            <Typography variant='h6'>Continuar</Typography>
+                            <Typography variant='h6' tabIndex='0'>Continuar</Typography>
                         </Button>
                     </Link>
                 </Box>
