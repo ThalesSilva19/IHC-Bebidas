@@ -1,22 +1,16 @@
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Card, Box, TextField, Button, Typography } from '@mui/material';
-import Image from 'next/image';
+import React from 'react';
+import Link from 'next/link'
+import { Card, Box, TextField, Button } from '@mui/material';
+import Image from 'next/image'
 import logo from '../public/images/logo.png'
 import carrinhoIcon from '../public/images/carrinho-carrinho.png'
 import usuarioIcon from '../public/images/perfil-de-usuario.png'
 import lupaIcon from '../public/images/lupa.png'
 
 export default function Footer(props) {
-  const [user, setUser] = useState('');
-  const [loginurl, setLoginurl] = useState("/auth/login");
+
   return (
-    <Card variant='outlined' onLoad={() => {
-      if (localStorage.getItem('nome') !== null & localStorage.getItem('login') !== null) {
-        setUser('Olá, ' + localStorage.getItem('nome'))
-        setLoginurl('/')
-      }
-    }} sx={{
+    <Card variant='outlined' sx={{
       display: 'flex',
       flexDirection: 'row',
       alignItems: 'center',
@@ -84,17 +78,10 @@ export default function Footer(props) {
           />
         </Button>
       </Box>
-      <Box sx={{display: 'flex',
-      flexDirection: 'row',}}>
-      <Box sx={{
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        
-      }}>
-        <Typography>{user}</Typography>
-        <Link href={loginurl}>
+      <Box>
+        <Link href="/auth/login">
           <Button sx={{
+            marginLeft: "25vh",
             marginRight: "1vh"
           }}>
             <Image
@@ -105,7 +92,6 @@ export default function Footer(props) {
               height="40vh" />
           </Button>
         </Link>
-      </Box>
         <Link href="/cart">
           <Button>
             <Image
