@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Card, Box, TextField, Button, Typography } from '@mui/material';
-import Image from 'next/image'
+import Image from 'next/image';
 import logo from '../public/images/logo.png'
 import carrinhoIcon from '../public/images/carrinho-carrinho.png'
 import usuarioIcon from '../public/images/perfil-de-usuario.png'
