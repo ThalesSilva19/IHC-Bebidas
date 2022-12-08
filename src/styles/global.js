@@ -39,7 +39,7 @@ const GlobalStyle = createGlobalStyle`
     transition: all 0.2s;
     height: calc(24em);
     background-color: #FFB600;
-    z-index: 1;
+    z-index: 100;
   }
   .nav__close {
     position: relative;
