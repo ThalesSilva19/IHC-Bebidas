@@ -1,7 +1,7 @@
-import React from 'react'
-import { useRouter } from 'next/router' 
-import Link from 'next/link'
-import * as yup from 'yup'
+import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import * as yup from 'yup';
 import "yup-phone-lite";
 import  {cpf as cpf1} from "cpf-cnpj-validator";
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
@@ -41,6 +41,8 @@ export default function RegisterCard() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      const nome = values.name.split(' ')
+      localStorage.setItem('nome', nome[0])
       router.push('/auth/login')
     },
   })

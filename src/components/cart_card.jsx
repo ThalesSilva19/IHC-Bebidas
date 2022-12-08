@@ -7,7 +7,7 @@ import PriceTable from './price_table';
 export default function CartCard() {
     return (
         <Card sx={{
-            width: '80%',
+            width: {xs: '90vw', sm: '90vw', md:'80vw'},
             padding: 'calc(8px + 1.5625vw)',
             display: 'flex',
             flexDirection: 'column',
@@ -26,6 +26,7 @@ export default function CartCard() {
                 <Box sx={{
                     display: 'flex',
                     alignItems: 'center',
+                    flexWrap: 'wrap',
                     justifyContent: 'space-between',
                     border: 'solid 1px #000',
                     height: 'calc((8px + 1.5625vw)*2)',
@@ -35,14 +36,24 @@ export default function CartCard() {
                     columnGap: 'calc((8px + 1.5625vw)/2)'
                 }}> 
                     <Box sx={{
-                        width: 'calc(45px + 0.67em*15)'
+                        width: {xs: '25vw', sm: '18vw', md:'15vw'}
                     }}>
                         <Typography variant='h5'>Produto</Typography>
                     </Box>
-                    <Typography variant='h5'>Preço</Typography>
-                    <Typography variant='h5'>Qtde.</Typography>
-                    <Typography variant='h5'>Subtotal</Typography>
-                    <Typography variant='h5'>Remover</Typography>
+                    <Typography variant='h5' sx={{
+                        display: {xs: 'none', sm: 'inline', md: 'inline'},
+                        width: {sm: '12vw', md:'10vw'},
+                    }}>
+                        Preço
+                    </Typography>
+                    <Typography variant='h5' sx={{
+                        display: {xs: 'none', sm: 'inline', md: 'inline'},
+                        width: {sm: '12vw', md:'8vw'}
+                    }}>
+                        Qtde.
+                    </Typography>
+                    <Typography variant='h5' sx={{width: {xs: '25vw', sm: '12vw', md:'8vw'}}}>Subtotal</Typography>
+                    <Typography variant='h5' sx={{width: {xs: '25vw', sm: '12vw', md:'8vw'}}}>Remover</Typography>
                 </Box>
                 <CartItem />
                 <CartItem />

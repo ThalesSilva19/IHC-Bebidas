@@ -25,6 +25,7 @@ export default function LoginCard() {
     },
     validationSchema: validationSchema,
     onSubmit: () => {
+      localStorage.setItem('login', true)
       router.push('/');
     },
   })
