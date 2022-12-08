@@ -1,6 +1,7 @@
 import React from 'react';
+
 import Image from 'next/image';
-import { Box, Typography, Button } from '@mui/material';
+import { Card, Box, Typography, Button } from '@mui/material';
 import Counter from '../components/counter';
 
 import imagem from '../public/images/cerveja.png'
@@ -23,12 +24,8 @@ export default function CompleteProductCard() {
         >   
             <Box sx={{
                 display: 'flex',
-                width: {xs: '15vw', sm: '10vw', md:'6vw'},
-                height: 'auto',
-                "&:hover": {
-                    cursor: 'pointer !important',
-                    visibility: 'visible'
-                  },}}>
+                width: {xs: '15vw', sm: '12vw', md:'6vw'},
+                height: 'auto'}}>
                 <Image
                     role="img"
                     tabIndex="0"
@@ -36,7 +33,6 @@ export default function CompleteProductCard() {
                     src={imagem}
                     aria-labelledby="Garrafa de cerveja com rótulo escrito Quilmes"
                     alt='Garrafa de cerveja com rótulo escrito Quilmes'
-                    title='Garrafa de cerveja com rótulo escrito Quilmes'
                 />
             </Box>
             <Box
@@ -62,16 +58,14 @@ export default function CompleteProductCard() {
                     <Typography variant='h6' tabIndex="0" sx={{fontSize:'1.5em'}}>R$ 9,90</Typography>
                     <Counter />
                 </Box>
-                <Link href='/cart'>
-                    <Button variant='contained'
-                        sx={{
-                            backgroundColor: '#FFB600',
-                            color: '#000000'
-                        }}
-                    >
-                        <Typography variant='h6' sx={{fontSize:'1.25em'}}>Adicionar ao carrinho</Typography>
-                    </Button>
-                </Link>
+                <Button variant='contained'
+                    sx={{
+                        backgroundColor: '#FFB600',
+                        color: '#000000'
+                    }}
+                >
+                    <Typography variant='h6' sx={{fontSize:'1.25em'}}>Adicionar ao carrinho</Typography>
+                </Button>
             </Box>
         </Box>
     )
