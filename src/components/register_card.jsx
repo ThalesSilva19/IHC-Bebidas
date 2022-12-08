@@ -1,6 +1,6 @@
-import React from 'react'
-import { useRouter } from 'next/router' 
-import Link from 'next/link'
+import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 import * as yup from 'yup';
 import "yup-phone-lite";
 import  {cpf as cpf1} from "cpf-cnpj-validator";
