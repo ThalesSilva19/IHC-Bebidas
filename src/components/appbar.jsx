@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Link from 'next/link'
+import Link from 'next/link';
 import { Card, Box, TextField, Button, Typography } from '@mui/material';
 import Image from 'next/image'
 import logo from '../public/images/logo.png'
