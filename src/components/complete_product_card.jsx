@@ -62,14 +62,16 @@ export default function CompleteProductCard() {
                     <Typography variant='h6' tabIndex="0" sx={{fontSize:'1.5em'}}>R$ 9,90</Typography>
                     <Counter />
                 </Box>
-                <Button variant='contained'
-                    sx={{
-                        backgroundColor: '#FFB600',
-                        color: '#000000'
-                    }}
-                >
-                    <Typography variant='h6' sx={{fontSize:'1.25em'}}>Adicionar ao carrinho</Typography>
-                </Button>
+                <Link href='/cart'>
+                    <Button variant='contained'
+                        sx={{
+                            backgroundColor: '#FFB600',
+                            color: '#000000'
+                        }}
+                    >
+                        <Typography variant='h6' sx={{fontSize:'1.25em'}}>Adicionar ao carrinho</Typography>
+                    </Button>
+                </Link>
             </Box>
         </Box>
     )
