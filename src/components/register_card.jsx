@@ -41,6 +41,8 @@ export default function RegisterCard() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
+      const nome = values.name.split(' ')
+      localStorage.setItem('nome', nome[0])
       router.push('/auth/login')
     },
   })
