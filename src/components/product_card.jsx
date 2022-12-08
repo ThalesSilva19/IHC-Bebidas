@@ -51,11 +51,11 @@ export default function ProductCard(props) {
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
-          justifyContent: 'space-between',
-          width: '60%'
+          justifyContent: 'space-around',
+          width: '80%'
         }}
       >
-        <Typography variant='h5' tabIndex="0" sx={{fontSize:'1.2em'}}>Preço: R$</Typography>
+        <Typography variant='h5' tabIndex="0" sx={{fontSize:'1.2em'}}>Preço: R$ 9,90</Typography>
         <Counter/>
       </Box>
       <Link href='/cart'>

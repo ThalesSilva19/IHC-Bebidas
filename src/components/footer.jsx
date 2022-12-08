@@ -20,7 +20,8 @@ export default function Footer(props) {
       borderRadius: '0 !mportant',
       backgroundColor: '#CBCBCB',
       paddingTop: '32px',
-      paddingBottom: '32px'
+      paddingBottom: '32px',
+      flexWrap: 'wrap'
     }}>
       <Box
         sx={{

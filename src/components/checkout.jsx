@@ -3,6 +3,7 @@ import Link from 'next/link'
 import dayjs, { Dayjs } from 'dayjs';
 import { Box, Card, Typography, TextField, Button, FormLabel, FormControlLabel, RadioGroup, Radio } from '@mui/material';
 import PriceTable from './price_table';
+import { WrapText } from '@mui/icons-material';
 
 export default function Checkout() {
     const [value, setValue] = React.useState(
@@ -25,10 +26,12 @@ export default function Checkout() {
         }}>
             <Typography variant='h4' aria-label='Pagamento' tabIndex='0'>PAGAMENTO</Typography>
             <Box sx={{
-                display: 'flex'
+                display: 'flex',
+                justifyContent: 'space-around',
+                flexWrap: 'wrap',
             }}>
                 <Box sx={{
-                    borderRight: 'solid 1px #CBCBCB',
+                    //borderRight: 'solid 1px #CBCBCB',
                     padding: '32px'
                 }}>
                     <Box>
